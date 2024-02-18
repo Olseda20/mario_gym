@@ -4,11 +4,15 @@ from gym.wrappers import GrayScaleObservation
 
 # when we implent the RL model we need to vectorize the model to order use it?
 from stable_baselines3.common.vec_env import VecFrameStack, DummyVecEnv
+from stable_baselines3 import PPO
+from train_and_logging_callback import TrainAndLoggingCallback
 
 from matplotlib import pyplot as plt
 
 import gym_super_mario_bros
 from gym_super_mario_bros.actions import SIMPLE_MOVEMENT
+
+import os
 
 # 1- create the base environment
 env = gym_super_mario_bros.make("SuperMarioBros2-v0")
