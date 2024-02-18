@@ -1,4 +1,7 @@
-from nes_py.wrappers import JoypadSpace
+from nes_py.wrappers import JoypadSpace, FrameStack, GrayScaleObservation
+from stable_baseline3.common.vec_env import VecFrameStack, DummyVecEnv
+from matplotlib import pyplot as plt 
+
 import gym_super_mario_bros
 from gym_super_mario_bros.actions import SIMPLE_MOVEMENT
 
