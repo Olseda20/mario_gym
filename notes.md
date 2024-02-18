@@ -12,3 +12,12 @@ action
 
 
 Using PPO Proximal Policy Optimisation Algorithm
+
+
+Policies
+CNN Policy - 
+- good for images
+MLP - multiperceptron layer policy
+-  for tabular data, csv, json 
+
+
