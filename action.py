@@ -54,7 +54,7 @@ state = env.reset()
 
 # ---
 # Training
-# callback = TrainAndLoggingCallback(check_freq=10000, save_path="./train/")
+# callback = TrainAndLoggingCallback(check_freq=50000, save_path="./train/")
 # model = PPO(
 #     "CnnPolicy",
 #     env,
@@ -65,12 +65,12 @@ state = env.reset()
 # )
 # #
 # # # Training the AI model
-# model.learn(total_timesteps=1000000, callback=callback)
+# model.learn(total_timesteps=5000000, callback=callback)
 # # # to do a manual save -> model.save() no need cause we are using the callback
 # #
 
 # running the trained model
-path_to_model = "./train/best_model_580000"
+path_to_model = "./train/best_model_3900000"
 model = PPO.load(path_to_model)
 
 while True:
